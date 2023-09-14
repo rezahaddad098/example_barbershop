@@ -1,42 +1,76 @@
 <html>
-    <head>
-        <title>MSI</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    </head>
-    <body>
+  <head>
+    <title>MSI</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
     <section id="banner">
-        <img src="images/logo.png" class="logo" alt="without access">
-        <div class="banner-text">
-            <h1 title="first project">Msi catalogue</h1>
-            <p>Programming With Best Performance</p>
-            <div class="btn">
-                <a href="#"><span></span>Tools</a>
-                <a href="#"><span></span>Future</a>
-
-
+      <img src="images/logo.png" class="logo" alt="without access" />
+      <div class="banner-text">
+        <h1>MSI PRODUCTS</h1>
+        <p>Programming With Best Performance</p>
+        <div class="btn">
+          <a href="#"><span></span>Tools</a>
+          <a href="#"><span></span>option</a>
+        </div>
+      </div>
+    </section>
+    <div id="sidenavigation">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">PRODUCTS</a></li>
+          <li><a href="#">ABOUT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menukey">
+      <img src="images/menu.png" id="menu" />
+    </div>
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experimental Lab</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>MSI is a world leader in gaming.
+                            content creation, business & productivity.</p>
+                    </div>
+                </div>
+            <div class="features-img">
+                <img src="images/1.jpg">
             </div>
         </div>
-    </section>   
-<div id="sidenavigaion">
-    <nav>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">FEATUERS</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">PRODUCTS</a></li>
-            <li><a href="#">ABOUT US</a></li>
-        </ul>
-    </nav>
-
-</div>
-
-
-
-
-
-
-    </body>
+    </section>
+    <script>
+      var menukey = document.getElementById("menukey");
+      var sidenavigation = document.getElementById("sidenavigation");
+      var menu = document.getElementById("menu");
+      sidenavigation.style.right = "-250px";
+      menukey.onclick = function () {
+        if (sidenavigation.style.right == "-250px") {
+          sidenavigation.style.right = "0";
+          menu.src = "images/close.png";
+        } else {
+          sidenavigation.style.right = "-250px";
+          menu.src = "images/menu.png";
+        }
+      }
+    </script>
+  </body>
 </html>
