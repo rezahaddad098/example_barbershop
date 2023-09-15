@@ -150,7 +150,7 @@ cursor: pointer;
         flex-basis: 50%;
     }
     .features-img{
-        flex-basis: 50%;
+        flex-basis: 40%;
         margin: auto;
     }
     .features-img img{
@@ -167,4 +167,13 @@ cursor: pointer;
         display: flex;
         align-items: center;
         margin-bottom: 40px;
+    }
+    .feature-icon .fa{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50;
+        border-radius: 8px;
+        color: #bc4dad;
+        border: 1px solid #bc4dad;
     }
